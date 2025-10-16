@@ -1,0 +1,177 @@
+QUESTION ZERO: 
+Password Requirements 
+Scenario: 
+Check if passwords meet basic security rules (minimum 8 characters, contains numbers). 
+
+
+Data: 
+passwords = ["hello123", "cat", "secure2024", "password"] 
+
+
+Tasks: 
+a) Check each password's length. 
+b) Create a list of passwords that are 8 or more characters long. 
+c) come up with your own rules - no restrictions - think like your own application you are developing
+
+
+passwords = ["hello123", "cat", "secure2024", "password"]
+
+
+def check_pw(password_list):
+    valid_passwords = []
+    for pw in password_list:
+        if len(pw) >= 8 and any(char.isdigit() for char in pw):
+            valid_passwords.append(pw)
+    return valid_passwords
+
+
+check_pw(passwords)
+
+
+
+
+QUESTION ONE: 
+Attendance Check (Workshop) 
+Scenario: You have a list of attendee names with a few duplicates. 
+
+
+Starter data: 
+attendees = ["Amir", "Bea", "Amir", "Dev", "Ella", "Bea"] 
+
+
+Tasks: 
+a) Count how many people signed in (raw count). 
+b) Create a de-duplicated collection of attendees. 
+c) Show how many duplicates were removed.
+
+
+QUESTION TWO: 
+Mini Contacts Book 
+
+
+Scenario: Map people to their phone numbers. 
+
+
+Data: 
+Start empty: contacts = {} 
+
+
+Tasks: 
+a) Add three contacts (name → number). 
+b) Update one number. 
+c) Show how many contacts you have and list just the names.
+
+
+QUESTION THREE: 
+Feature Flags (App Settings) 
+Scenario: Enable/disable simple app features. 
+
+
+Data: 
+flags = {"dark_mode": True, "notifications": False, "beta_banner": True} 
+
+
+Tasks: 
+a) Count how many features are enabled. 
+b) Turn notifications on. 
+c) List all feature names. 
+
+
+
+
+QUESTION FOUR: 
+Library Loans 
+Scenario: Track book availability. 
+Data: 
+books = {"Dune": "available", "1984": "borrowed", "Neuromancer": "available"} 
+
+
+Tasks: 
+a) Mark "1984" as returned (now available). 
+b) Count how many books are available. 
+c) Get a sorted list of all book titles. 
+
+QUESTION FIVE: 
+Gym Set Tracker (Basics) 
+Scenario: You logged weights for a single exercise. 
+Data: 
+sets = [40, 42.5, 42.5, 45, 45] # kg 
+Tasks: 
+a) Find the heaviest set and the lightest set. 
+b) Compute the average weight lifted across sets. 
+
+
+QUESTION SIX: 
+Tiny Marks Register 
+Scenario: Record marks for three students. 
+Data: 
+marks = {"Amir": 74, "Bea": 81, "Chen": 68} 
+
+
+Tasks: 
+a) Compute the class average. 
+b) Increase Amir’s mark by 3 bonus points and recompute average. 
+c) Get the highest and lowest mark values.
+
+
+
+
+QUESTION SEVEN: 
+Quick Currency Note 
+Scenario: Convert a couple of GBP amounts to EUR with a fixed rate. 
+Data: 
+rate = 1.16 # EUR per GBP amounts_gbp = [12.50, 3.20] 
+
+
+Tasks: 
+a) Convert both amounts to EUR (store in a new list). 
+b) Compute the total EUR across those items. 
+
+
+QUESTION EIGHT: 
+Email De-dupe Counter 
+Scenario: You exported emails with repeats. 
+
+
+Data: 
+emails = ["a@x.com", "b@y.com", "a@x.com", "c@z.com", "b@y.com"] 
+
+
+Tasks: 
+a) Count total emails vs unique emails. 
+b) Compute how many duplicates there are. 
+c) Produce a sorted list of unique emails. 
+
+
+QUESTION TEN: 
+Email Domain Counter 
+
+
+Scenario: Count how many people use each email provider from a list of emails. 
+
+
+Data: 
+emails = ["john@gmail.com", "sarah@yahoo.com", "mike@gmail.com", "emma@outlook.com", "alex@gmail.com"] 
+
+
+Tasks: 
+a) Extract just the domain part (after @) from each email. 
+b) Count how many times each domain appears (which data structure lets you store counts?). 
+c) Which email provider is most popular? 
+
+
+
+QUESTION ELEVEN: 
+Recipe Ingredient Comparison 
+Scenario: You want to make two recipes but see which ingredients overlap. 
+
+
+Data: 
+recipe1_ingredients = ["flour", "eggs", "milk", "sugar", "butter"] recipe2_ingredients = ["eggs", "milk", "cheese", "salt"] 
+
+
+Tasks: 
+a) Convert both lists to sets. 
+b) Find ingredients that appear in both recipes. 
+c) Find ingredients you need only for recipe1 (not in recipe2).
+
